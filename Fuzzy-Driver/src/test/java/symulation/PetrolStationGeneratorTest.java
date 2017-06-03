@@ -22,10 +22,15 @@ public class PetrolStationGeneratorTest {
     @Test
     public void generateStationsForTheRoad() throws Exception {
         generator.generateStationsOnTheRoad();
+
         assertThat(road.getPetrolStations())
                 .isNotEmpty()
                 .doesNotContainNull()
-                .doesNotHaveDuplicates();
+                .doesNotHaveDuplicates()
+                .extracting("petrolPrice")
+                .allMatch((x -> (Float)x < 4f))
+                .allMatch(x -> (Float)x > 3.5f);
+
 
         System.out.println(road.getPetrolStations().toString());
     }

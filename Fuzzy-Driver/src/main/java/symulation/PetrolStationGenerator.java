@@ -36,10 +36,10 @@ public class PetrolStationGenerator {
         }
     }
 
-    private PetrolStation generateStation(int position){
+    private PetrolStation generateStation(int positionOnRoad){
         float fuelPrice = new RandomFloatGenerator().generateNumberFromRange(minimalFuelPrice,maximumFuelPrice);
 
-        return new PetrolStation(position,fuelPrice);
+        return new PetrolStation(positionOnRoad,fuelPrice);
     }
 
 
