@@ -66,3 +66,10 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+/.idea/compiler.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/uiDesigner.xml
+/.idea/kotlinc.xml
+/.idea/workspace.xml
