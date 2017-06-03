@@ -1,5 +1,6 @@
 package symulation;
 
+import symulation.data.PetrolStation;
 import symulation.data.Road;
 
 /**
@@ -9,7 +10,7 @@ import symulation.data.Road;
 public class PetrolStationGenerator {
     private Road road;
     private int minimalDistanceBetweenStations = 50;
-    private int DistanceBetweenStations = 200;
+    private int maximumDistanceBetweenStations = 200;
     private float minimalFuelPrice = 3.5f;
     private float maximumFuelPrice = 4f;
 
@@ -17,7 +18,29 @@ public class PetrolStationGenerator {
         this.road = road;
     }
 
+    public void generateStationsOnTheRoad(){
+        RandomIntegerGenerator generator = new RandomIntegerGenerator();
+        int lastStationPosition = 0;
+        road.addPetrolStation(generateStation(lastStationPosition));
 
+        while (lastStationPosition < road.getDistance()){
+           int nextStationDistance = generator.generateNumberFromRange(minimalDistanceBetweenStations,maximumDistanceBetweenStations);
+
+           if(lastStationPosition+nextStationDistance <= road.getDistance()){
+                road.addPetrolStation(generateStation(lastStationPosition+nextStationDistance));
+                lastStationPosition += nextStationDistance;
+           }else{
+               break;
+           }
+
+        }
+    }
+
+    private PetrolStation generateStation(int position){
+        float fuelPrice = new RandomFloatGenerator().generateNumberFromRange(minimalFuelPrice,maximumFuelPrice);
+
+        return new PetrolStation(position,fuelPrice);
+    }
 
 
     public Road getRoad() {
@@ -36,12 +59,12 @@ public class PetrolStationGenerator {
         this.minimalDistanceBetweenStations = minimalDistanceBetweenStations;
     }
 
-    public int getDistanceBetweenStations() {
-        return DistanceBetweenStations;
+    public int getMaximumDistanceBetweenStations() {
+        return maximumDistanceBetweenStations;
     }
 
-    public void setDistanceBetweenStations(int distanceBetweenStations) {
-        DistanceBetweenStations = distanceBetweenStations;
+    public void setMaximumDistanceBetweenStations(int maximumDistanceBetweenStations) {
+        this.maximumDistanceBetweenStations = maximumDistanceBetweenStations;
     }
 
     public float getMinimalFuelPrice() {
