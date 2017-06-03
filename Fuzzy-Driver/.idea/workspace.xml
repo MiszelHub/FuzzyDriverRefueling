@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7739ff1-4f65-482f-be8e-77ec18272190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travic.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.travic.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.travic.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -576,7 +577,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496511683353</updated>
       <workItem from="1496511684862" duration="145000" />
-      <workItem from="1496511832327" duration="245000" />
+      <workItem from="1496511832327" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="packet name changed">
       <created>1496511902493</created>
@@ -585,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496511902493</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="plik do travisa">
+      <created>1496512087084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496512087084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390000" />
+    <option name="totallyTimeSpent" value="575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -634,7 +642,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="packet name changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="packet name changed" />
+    <MESSAGE value="plik do travisa" />
+    <option name="LAST_COMMIT_MESSAGE" value="plik do travisa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
