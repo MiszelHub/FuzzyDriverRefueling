@@ -17,6 +17,9 @@ public class PetrolStationGenerator {
         this.road = road;
     }
 
+
+
+
     public Road getRoad() {
         return road;
     }
