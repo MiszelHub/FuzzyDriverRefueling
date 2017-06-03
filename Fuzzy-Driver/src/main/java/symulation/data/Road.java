@@ -1,6 +1,8 @@
 package symulation.data;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Created by user on 03.06.2017.
@@ -8,16 +10,16 @@ import java.util.ArrayList;
 public class Road
 {
     private int distance = 2000;
-    private final ArrayList<PetrolStation> petrolStations;
+    private final Queue<PetrolStation> petrolStations;
     public Road()
     {
-        petrolStations = new ArrayList<>();
+        petrolStations = new LinkedList<>();
     }
 
     public Road(int distance)
     {
         this.distance = distance;
-        petrolStations = new ArrayList<>();
+        petrolStations = new LinkedList<>();
     }
 
     public void addPetrolStation(PetrolStation petrolStation){
@@ -28,7 +30,7 @@ public class Road
         return distance;
     }
 
-    public ArrayList<PetrolStation> getPetrolStations() {
+    public Queue<PetrolStation> getPetrolStations() {
         return petrolStations;
     }
 

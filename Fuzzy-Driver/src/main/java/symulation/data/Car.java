@@ -5,24 +5,26 @@ package symulation.data;
  */
 public class Car {
 
-    private int fuelCapacity;
-    private short fuelConsumptionPerHundredKilometers;
-    private Road road;
-    private int positionOnRoad=0;
+    private float fuelCapacity = 35f;
+    private float currentFuelLevel = 0;
+    private float fuelConsumptionPerHundredKilometers = 7;
+    private int positionOnRoad = 0;
 
-    public Car(Road road) {
-        this.road = road;
+    public Car() {
+
     }
 
-    public int getFuelCapacity() {
+
+    public float getFuelCapacity() {
         return fuelCapacity;
     }
 
-    public void setFuelCapacity(int fuelCapacity) {
+    public void setFuelCapacity(float fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
 
-    public short getFuelConsumptionPerHundredKilometers() {
+
+    public float getFuelConsumptionPerHundredKilometers() {
         return fuelConsumptionPerHundredKilometers;
     }
 
@@ -30,13 +32,6 @@ public class Car {
         this.fuelConsumptionPerHundredKilometers = fuelConsumptionPerHundredKilometers;
     }
 
-    public Road getRoad() {
-        return road;
-    }
-
-    public void setRoad(Road road) {
-        this.road = road;
-    }
 
     public int getPositionOnRoad() {
         return positionOnRoad;
@@ -55,16 +50,22 @@ public class Car {
 
         if (fuelCapacity != car.fuelCapacity) return false;
         if (fuelConsumptionPerHundredKilometers != car.fuelConsumptionPerHundredKilometers) return false;
-        if (positionOnRoad != car.positionOnRoad) return false;
-        return road != null ? road.equals(car.road) : car.road == null;
+        return positionOnRoad == car.positionOnRoad;
     }
 
     @Override
     public int hashCode() {
-        int result = fuelCapacity;
+        int result = (int) fuelCapacity;
         result = 31 * result + (int) fuelConsumptionPerHundredKilometers;
-        result = 31 * result + ( road != null ? road.hashCode() : 0 );
         result = 31 * result + positionOnRoad;
         return result;
+    }
+
+    public float getCurrentFuelLevel() {
+        return currentFuelLevel;
+    }
+
+    public void setCurrentFuelLevel(float currentFuelLevel) {
+        this.currentFuelLevel = currentFuelLevel;
     }
 }
