@@ -1,7 +1,8 @@
 package symulation;
 
-import symulation.data.Car;
-import symulation.data.OutOfFuelException;
+import app.App;
+import org.apache.log4j.Logger;
+import symulation.exceptions.OutOfFuelException;
 import symulation.data.PetrolStation;
 import symulation.data.Road;
 
@@ -11,7 +12,7 @@ import symulation.data.Road;
 public class JourneySimulation {
     private CarController carController;
     private Road road;
-
+    final static Logger logger = Logger.getLogger(JourneySimulation.class);
 
     public JourneySimulation(CarController carController, Road road) {
         this.carController = carController;
@@ -19,19 +20,27 @@ public class JourneySimulation {
     }
 
     public void startSimulation() throws OutOfFuelException {
-        while (carController.getCar().getPositionOnRoad() != road.getDistance()){
+        while (carController.getCar().getPositionOnRoad() != road.getDistance()) {
 
-                driveToNextDestination(carController.getNextStation());
+
+            if (!road.getPetrolStations().isEmpty()) {
+                if (carController.getCar().getPositionOnRoad() == carController.getNextStation().getPosition()) {
+                    logger.info("Arrived at station " + carController.getNextStation().toString());
+                    carController.analyzeFuelSituation();
+                }
+            }
+
+            drive();
 
         }
+        logger.info("Arrived at destination "+carController.getCar().getPositionOnRoad());
     }
 
-    private void driveToNextDestination(PetrolStation petrolStation) throws OutOfFuelException {
-        int distanceToDrive = petrolStation.getPosition() - carController.getCar().getPositionOnRoad();
-        float fuelToConsume = carController.getCar().getFuelConsumptionPerHundredKilometers()/100f;
+    private void drive() throws OutOfFuelException {
 
-        for (int i = 0; i < distanceToDrive; i++) {
-            carController.consumeFuel(fuelToConsume);
-        }
+        float fuelToConsume = carController.getCar().getFuelConsumptionPerHundredKilometers() / 100f;
+
+        carController.consumeFuel(fuelToConsume);
+        carController.getCar().setPositionOnRoad(carController.getCar().getPositionOnRoad() + 1);
     }
 }
