@@ -29,4 +29,19 @@ public class MembershipFunctionTest {
                 .isNotEmpty()
                 .containsSequence(0f, 0f, 0f, 0.25f, 0.75f, 1f, 0.5f, 0f);
     }
+
+    @Test
+    public void trapezoidalFunction() throws Exception {
+        membershipFunction = new TrapezoidalMembershipFunction(1,5,7,8);
+
+        Stream<Integer> integerStream = Stream.of(0, 1, 2, 3, 5, 6, 7, 8,9,10);
+
+        List<Float> resultList = integerStream
+                .map(x -> membershipFunction.calculateDegreeOfTruth(x))
+                .collect(Collectors.toList());
+
+        assertThat(resultList)
+                .isNotEmpty()
+                .containsSequence(0f, 0f, 0.25f, 0.5f, 1f, 1f, 1f,0f,0f,0f);
+    }
 }

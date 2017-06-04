@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7739ff1-4f65-482f-be8e-77ec18272190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,19 +18,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JourneySimulation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#JourneySimulation#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,11 +89,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TrapezoidalMembershipFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TriangularMembershipFunction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="159">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,8 +122,8 @@
       <file leaf-file-name="MembershipFunctionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="74" lean-forward="true" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+            <state relative-caret-position="397">
+              <caret line="44" column="76" lean-forward="true" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/CarController.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" />
       </list>
@@ -465,33 +463,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MembershipFunctionTest.triangularFunction">
-    <configuration default="false" name="NumberGeneratorTest.generateFloat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="symulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Fuzzy-Driver" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="symulation" />
-      <option name="MAIN_CLASS_NAME" value="symulation.NumberGeneratorTest" />
-      <option name="METHOD_NAME" value="generateFloat" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MembershipFunctionTest.trapezoidalFunction">
     <configuration default="false" name="PetrolStationGeneratorTest.generateStationsForTheRoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -577,6 +549,32 @@
       <option name="PACKAGE_NAME" value="FuzzyLogic" />
       <option name="MAIN_CLASS_NAME" value="FuzzyLogic.MembershipFunctionTest" />
       <option name="METHOD_NAME" value="triangularFunction" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MembershipFunctionTest.trapezoidalFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="FuzzyLogic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Fuzzy-Driver" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="FuzzyLogic" />
+      <option name="MAIN_CLASS_NAME" value="FuzzyLogic.MembershipFunctionTest" />
+      <option name="METHOD_NAME" value="trapezoidalFunction" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -978,19 +976,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest.generateFloat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest.generateStationsForTheRoad" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.App" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.triangularFunction" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest.generateStationsForTheRoad" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.App" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.triangularFunction" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.trapezoidalFunction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.triangularFunction" />
-        <item index="1" class="java.lang.String" itemvalue="Application.App" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest.generateStationsForTheRoad" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest.generateFloat" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.trapezoidalFunction" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MembershipFunctionTest.triangularFunction" />
+        <item index="2" class="java.lang.String" itemvalue="Application.App" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PetrolStationGeneratorTest.generateStationsForTheRoad" />
       </list>
     </recent_temporary>
   </component>
@@ -1006,7 +1004,7 @@
       <updated>1496511683353</updated>
       <workItem from="1496511684862" duration="145000" />
       <workItem from="1496511832327" duration="16787000" />
-      <workItem from="1496591800403" duration="8509000" />
+      <workItem from="1496591800403" duration="9768000" />
     </task>
     <task id="LOCAL-00001" summary="packet name changed">
       <created>1496511902493</created>
@@ -1106,10 +1104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1496602539290</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added TriangularMembershipFunction.java and tested">
+      <created>1496605283207</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496605283207</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="MembershipFunctionTest_trapezoidalFunction - 2017.06.04 at 22h 01m 54s.xml">
+      <configuration name="MembershipFunctionTest.trapezoidalFunction" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="MembershipFunctionTest_triangularFunction - 2017.06.04 at 21h 37m 55s.xml">
       <configuration name="MembershipFunctionTest.triangularFunction" configurationId="JUnit" />
     </history-entry>
@@ -1121,9 +1129,6 @@
     </history-entry>
     <history-entry file="MembershipFunctionTest_triangularFunction - 2017.06.04 at 21h 39m 25s.xml">
       <configuration name="MembershipFunctionTest.triangularFunction" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PetrolStationGeneratorTest - 2017.06.03 at 22h 06m 58s.xml">
-      <configuration name="PetrolStationGeneratorTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PetrolStationGeneratorTest - 2017.06.03 at 22h 07m 57s.xml">
       <configuration name="PetrolStationGeneratorTest" configurationId="JUnit" />
@@ -1142,10 +1147,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25441000" />
+    <option name="totallyTimeSpent" value="26700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1157,13 +1163,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1198,7 +1204,8 @@
     <MESSAGE value="lepsiejszy test dla generatora" />
     <MESSAGE value="zaczynamy symulacje robic" />
     <MESSAGE value="implementacja symulacji z uzyciem StupidSiri.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementacja symulacji z uzyciem StupidSiri.java" />
+    <MESSAGE value="added TriangularMembershipFunction.java and tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TriangularMembershipFunction.java and tested" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1537,22 +1544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/symulation/NumberGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1571,10 +1562,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="74" lean-forward="true" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+        <state relative-caret-position="397">
+          <caret line="44" column="76" lean-forward="true" selection-start-line="44" selection-start-column="76" selection-end-line="44" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
