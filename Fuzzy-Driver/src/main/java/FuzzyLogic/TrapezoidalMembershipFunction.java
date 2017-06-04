@@ -27,15 +27,37 @@ public class TrapezoidalMembershipFunction implements MembershipFunction {
     }
 
     @Override
-    public float calculateDegreeOfTruth(float x) {
-        if (x <= a) {
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        TrapezoidalMembershipFunction that = (TrapezoidalMembershipFunction) o;
+
+        if (Float.compare(that.a, a) != 0) return false;
+        if (Float.compare(that.b, b) != 0) return false;
+        if (Float.compare(that.c, c) != 0) return false;
+        return Float.compare(that.d, d) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ( a != +0.0f ? Float.floatToIntBits(a) : 0 );
+        result = 31 * result + ( b != +0.0f ? Float.floatToIntBits(b) : 0 );
+        result = 31 * result + ( c != +0.0f ? Float.floatToIntBits(c) : 0 );
+        result = 31 * result + ( d != +0.0f ? Float.floatToIntBits(d) : 0 );
+        return result;
+    }
+
+    @Override
+    public float calculateDegreeOfTruth(Number x) {
+        if (x.floatValue() <= a) {
             return 0;
-        } else if (( a <= x ) && ( x <= b )) {
-            return ( ( x - a ) / ( b - a ) );
-        } else if (( b <= x ) && ( x <= c )) {
+        } else if (( a <= x.floatValue() ) && ( x.floatValue() <= b )) {
+            return ( ( x.floatValue() - a ) / ( b - a ) );
+        } else if (( b <= x.floatValue() ) && ( x.floatValue() <= c )) {
             return 1;
-        } else if (( c <= x ) && ( x <= d )) {
-            return ( ( d - x ) / ( d - c ) );
+        } else if (( c <= x.floatValue() ) && ( x.floatValue() <= d )) {
+            return ( ( d - x.floatValue() ) / ( d - c ) );
         } else {
             return 0;
         }
