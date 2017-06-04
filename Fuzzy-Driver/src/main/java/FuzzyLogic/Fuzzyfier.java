@@ -13,15 +13,15 @@ public class Fuzzyfier<T extends Number> {
         this.fuzzySets = membershipFunction;
     }
 
-    public List<FuzzySetMember> FuzzyfyVariable(T variable){
+    public LinguisticVariable FuzzyfyVariable(T variableValue, String variableName){
 
         List<FuzzySetMember> list = new ArrayList<>();
 
-
         for (FuzzySet fuzzySet : fuzzySets){
-          list.add(new FuzzySetMember(fuzzySet.getFuzzySetName(),fuzzySet.getDegreeOfMembership(variable)));
+          list.add(new FuzzySetMember(fuzzySet.getFuzzySetName(),fuzzySet.getDegreeOfMembership(variableValue)));
         }
-        return list;
+
+        return new LinguisticVariable(variableName,list);
     }
 
 

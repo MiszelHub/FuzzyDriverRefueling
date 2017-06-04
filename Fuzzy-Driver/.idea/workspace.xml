@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7739ff1-4f65-482f-be8e-77ec18272190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetMember.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetName.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetRange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/MembershipFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TrapezoidalMembershipFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,14 +84,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinguisticVariable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LinguisticVariable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#248#249#0" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +104,8 @@
       <file leaf-file-name="Fuzzyfier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="100" lean-forward="true" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
@@ -118,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuzzyfierTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FuzzyfierTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="380">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +192,6 @@
         <option value="$PROJECT_DIR$/src/main/java/symulation/CarController.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Name.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/SetName.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetName.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetRange.java" />
@@ -205,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/TriangularMembershipFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySet.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" />
       </list>
     </option>
@@ -1053,7 +1050,7 @@
       <updated>1496511683353</updated>
       <workItem from="1496511684862" duration="145000" />
       <workItem from="1496511832327" duration="16787000" />
-      <workItem from="1496591800403" duration="14455000" />
+      <workItem from="1496591800403" duration="14743000" />
     </task>
     <task id="LOCAL-00001" summary="packet name changed">
       <created>1496511902493</created>
@@ -1167,7 +1164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496606545148</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fuzzyfier.java testowany">
+      <created>1496611235796</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1496611235796</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1178,6 +1182,9 @@
       <configuration name="FuzzyfierTest.fuzzyfyPriceWithTriangularMembershipFunction" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FuzzyfierTest_fuzzyfyPriceWithTriangularMembershipFunction - 2017.06.04 at 23h 19m 59s.xml">
+      <configuration name="FuzzyfierTest.fuzzyfyPriceWithTriangularMembershipFunction" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FuzzyfierTest_fuzzyfyPriceWithTriangularMembershipFunction - 2017.06.04 at 23h 24m 34s.xml">
       <configuration name="FuzzyfierTest.fuzzyfyPriceWithTriangularMembershipFunction" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MembershipFunctionTest - 2017.06.04 at 23h 19m 04s.xml">
@@ -1198,15 +1205,13 @@
     <history-entry file="MembershipFunctionTest_triangularFunction - 2017.06.04 at 21h 39m 25s.xml">
       <configuration name="MembershipFunctionTest.triangularFunction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PetrolStationGeneratorTest_generateStationsForTheRoad - 2017.06.03 at 21h 34m 26s.xml">
-      <configuration name="PetrolStationGeneratorTest.generateStationsForTheRoad" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31387000" />
+    <option name="totallyTimeSpent" value="31675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1218,7 +1223,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1261,7 +1266,8 @@
     <MESSAGE value="implementacja symulacji z uzyciem StupidSiri.java" />
     <MESSAGE value="added TriangularMembershipFunction.java and tested" />
     <MESSAGE value="TrapezoidalMembershipFunction.java tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="TrapezoidalMembershipFunction.java tested" />
+    <MESSAGE value="Fuzzyfier.java testowany" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fuzzyfier.java testowany" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1634,17 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzySetMember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1689,18 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="100" lean-forward="true" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1711,12 +1694,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
           </folding>
         </state>
       </provider>

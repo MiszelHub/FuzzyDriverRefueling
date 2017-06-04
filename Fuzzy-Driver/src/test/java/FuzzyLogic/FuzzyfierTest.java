@@ -26,9 +26,9 @@ public class FuzzyfierTest {
 
         fuzzyfier = new Fuzzyfier<>(fuzzySets);
 
-        List<FuzzySetMember> fuzzySetMembers = fuzzyfier.FuzzyfyVariable(PRICE);
+        LinguisticVariable price = fuzzyfier.FuzzyfyVariable(PRICE, "Price");
 
-        fuzzySetMembers.forEach(fuzzySetMember -> System.out.println(fuzzySetMember.toString()));
+        price.getFuzzySetMembers().forEach(fuzzySetMember -> System.out.println(fuzzySetMember.toString()));
 
 
     }

@@ -18,4 +18,11 @@ public class LinguisticVariable {
         this.fuzzySetMembers = fuzzySetMembers;
     }
 
+    public String getVariableName() {
+        return variableName;
+    }
+
+    public List<FuzzySetMember> getFuzzySetMembers() {
+        return fuzzySetMembers;
+    }
 }
