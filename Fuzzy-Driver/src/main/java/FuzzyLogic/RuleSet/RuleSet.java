@@ -1,4 +1,4 @@
-package FuzzyLogic;
+package FuzzyLogic.RuleSet;
 
 
 

@@ -1,6 +1,8 @@
 package FuzzyLogic;
 
-import org.junit.Before;
+import FuzzyLogic.membershipFunctions.MembershipFunction;
+import FuzzyLogic.membershipFunctions.TrapezoidalMembershipFunction;
+import FuzzyLogic.membershipFunctions.TriangularMembershipFunction;
 import org.junit.Test;
 
 import java.util.List;

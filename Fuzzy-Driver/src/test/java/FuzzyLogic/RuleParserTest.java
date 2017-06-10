@@ -1,5 +1,7 @@
 package FuzzyLogic;
 
+import FuzzyLogic.RuleSet.RuleSet;
+import app.XmlRuleSetParser;
 import org.junit.Before;
 import org.junit.Test;
 

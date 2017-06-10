@@ -1,13 +1,13 @@
-package FuzzyLogic;
+package FuzzyLogic.fuzzySet;
 
 /**
  * Created by user on 04.06.2017.
  */
 public class FuzzySetMember {
-    private FuzzySetName name;
+    private String name;
     private float degreeOfMembership;
 
-    public FuzzySetMember(FuzzySetName name, float degreeOfMembership) {
+    public FuzzySetMember(String name, float degreeOfMembership) {
         this.name = name;
         this.degreeOfMembership = degreeOfMembership;
     }
@@ -18,6 +18,14 @@ public class FuzzySetMember {
                 "name=" + name +
                 ", degreeOfMembership=" + degreeOfMembership +
                 '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public float getDegreeOfMembership() {
+        return degreeOfMembership;
     }
 
     @Override

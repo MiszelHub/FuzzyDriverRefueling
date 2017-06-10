@@ -1,4 +1,4 @@
-package FuzzyLogic;
+package FuzzyLogic.membershipFunctions;
 
 /**
  * Created by user on 04.06.2017.

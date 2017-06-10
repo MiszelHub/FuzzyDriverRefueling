@@ -1,4 +1,6 @@
-package FuzzyLogic;
+package app;
+
+import FuzzyLogic.RuleSet.RuleSet;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

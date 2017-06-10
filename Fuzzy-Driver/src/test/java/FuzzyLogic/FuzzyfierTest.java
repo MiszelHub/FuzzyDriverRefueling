@@ -1,5 +1,8 @@
 package FuzzyLogic;
 
+import FuzzyLogic.fuzzySet.FuzzySet;
+import FuzzyLogic.membershipFunctions.MembershipFunction;
+import FuzzyLogic.membershipFunctions.TriangularMembershipFunction;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -20,13 +23,13 @@ public class FuzzyfierTest {
     public void fuzzyfyPriceWithTriangularMembershipFunction() throws Exception {
 
         fuzzySets = new ArrayList<>();
-        fuzzySets.add(new FuzzySet(FuzzySetName.Low, new TriangularMembershipFunction(2,6,8)));
-        fuzzySets.add(new FuzzySet(FuzzySetName.Middle, new TriangularMembershipFunction(7,11,13)));
-        fuzzySets.add(new FuzzySet(FuzzySetName.High, new TriangularMembershipFunction(12,16,18)));
+        fuzzySets.add(new FuzzySet("Low", new TriangularMembershipFunction(2,6,8)));
+        fuzzySets.add(new FuzzySet("Middle", new TriangularMembershipFunction(7,11,13)));
+        fuzzySets.add(new FuzzySet("High", new TriangularMembershipFunction(12,16,18)));
 
         fuzzyfier = new Fuzzyfier<>(fuzzySets);
 
-        LinguisticVariable price = fuzzyfier.FuzzyfyVariable(PRICE, "Price");
+        FuzzyVariable price = fuzzyfier.FuzzyfyVariable(PRICE, "Price");
 
         price.getFuzzySetMembers().forEach(fuzzySetMember -> System.out.println(fuzzySetMember.toString()));
 

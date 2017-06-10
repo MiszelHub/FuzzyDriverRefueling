@@ -1,5 +1,8 @@
 package FuzzyLogic;
 
+import FuzzyLogic.fuzzySet.FuzzySet;
+import FuzzyLogic.fuzzySet.FuzzySetMember;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +16,7 @@ public class Fuzzyfier<T extends Number> {
         this.fuzzySets = membershipFunction;
     }
 
-    public LinguisticVariable FuzzyfyVariable(T variableValue, String variableName){
+    public FuzzyVariable FuzzyfyVariable(T variableValue, String variableName){
 
         List<FuzzySetMember> list = new ArrayList<>();
 
@@ -21,7 +24,7 @@ public class Fuzzyfier<T extends Number> {
           list.add(new FuzzySetMember(fuzzySet.getFuzzySetName(),fuzzySet.getDegreeOfMembership(variableValue)));
         }
 
-        return new LinguisticVariable(variableName,list);
+        return new FuzzyVariable(variableName,list);
     }
 
 

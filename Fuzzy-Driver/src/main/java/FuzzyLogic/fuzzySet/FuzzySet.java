@@ -1,13 +1,15 @@
-package FuzzyLogic;
+package FuzzyLogic.fuzzySet;
+
+import FuzzyLogic.membershipFunctions.MembershipFunction;
 
 /**
  * Created by user on 04.06.2017.
  */
 public class FuzzySet {
-    private FuzzySetName fuzzySetName;
+    private String fuzzySetName;
     private MembershipFunction membershipFunction;
 
-    public FuzzySet(FuzzySetName fuzzySetName, MembershipFunction membershipFunction) {
+    public FuzzySet(String fuzzySetName, MembershipFunction membershipFunction) {
         this.fuzzySetName = fuzzySetName;
         this.membershipFunction = membershipFunction;
     }
@@ -16,7 +18,7 @@ public class FuzzySet {
         return membershipFunction.calculateDegreeOfTruth(x);
     }
 
-    public FuzzySetName getFuzzySetName() {
+    public String getFuzzySetName() {
         return fuzzySetName;
     }
 

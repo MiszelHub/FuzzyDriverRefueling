@@ -1,4 +1,4 @@
-package FuzzyLogic;
+package app;
 
 import javax.xml.bind.JAXBException;
 

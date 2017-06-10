@@ -1,4 +1,4 @@
-package FuzzyLogic;
+package FuzzyLogic.RuleSet;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -13,6 +13,30 @@ public class RuleCondition {
     private String variable;
     @XmlValue
     private String value;
+
+    public RuleCondition() {
+    }
+
+    public RuleCondition(String variable, String value) {
+        this.variable = variable;
+        this.value = value;
+    }
+
+    public String getVariable() {
+        return variable;
+    }
+
+    public void setVariable(String variable) {
+        this.variable = variable;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
 
     @Override
     public String toString() {
