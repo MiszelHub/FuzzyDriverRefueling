@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleSet>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="petrolStatnionsInRange">Few</RuleCondition>
+        <Result variable="amountOfFuel">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrenstStation">High</RuleCondition>
+        <RuleCondition variable="petrolStatnionsInRange">Many</RuleCondition>
+        <Result variable="amountOfFuel">Low</Result>
+    </Rule>
+</RuleSet>

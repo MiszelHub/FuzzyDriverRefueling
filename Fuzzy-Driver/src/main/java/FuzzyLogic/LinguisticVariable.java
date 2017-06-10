@@ -8,7 +8,6 @@ import java.util.List;
 public class LinguisticVariable {
     String variableName;
     private List<FuzzySetMember> fuzzySetMembers;
-
     public LinguisticVariable(String variableName) {
         this.variableName = variableName;
     }
