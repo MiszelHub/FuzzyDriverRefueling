@@ -5,4 +5,5 @@ package FuzzyLogic.membershipFunctions;
  */
 public interface MembershipFunction {
     float calculateDegreeOfTruth(Number x);
+    float getCharacteristicValue();
 }

@@ -64,4 +64,9 @@ public class TrapezoidalMembershipFunction implements MembershipFunction {
 
 
     }
+
+    @Override
+    public float getCharacteristicValue() {
+        return (c+b)/2;
+    }
 }

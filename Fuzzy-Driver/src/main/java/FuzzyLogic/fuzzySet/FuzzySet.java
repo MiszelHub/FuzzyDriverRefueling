@@ -18,6 +18,9 @@ public class FuzzySet {
         return membershipFunction.calculateDegreeOfTruth(x);
     }
 
+    public float getCharacteristicValue(){
+        return membershipFunction.getCharacteristicValue();
+    }
     public String getFuzzySetName() {
         return fuzzySetName;
     }
