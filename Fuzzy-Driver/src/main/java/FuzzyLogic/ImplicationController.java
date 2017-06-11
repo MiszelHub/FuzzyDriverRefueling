@@ -29,7 +29,7 @@ public class ImplicationController {
         fuzzyVariables = new ArrayList<>();
     }
 
-    public void AddFuzzyVariable(FuzzyVariable fuzzyVariable) {
+    public void addFuzzyVariable(FuzzyVariable fuzzyVariable) {
         fuzzyVariables.add(fuzzyVariable);
     }
 
@@ -44,15 +44,18 @@ public class ImplicationController {
 
     }
 
-    private Optional<RuleResult> eveluateRule(Rule rule, List<FuzzyVariable> fuzzyVariables) {
-
+    protected Optional<RuleResult> eveluateRule(Rule rule, List<FuzzyVariable> fuzzyVariables) {
+        float ruleWeight = rule.getResult().getWeight();
         int fulfiledConditions = 0;
+
         for (FuzzyVariable fuzzyVariable : fuzzyVariables) {
             RuleCondition conditionMatchingVariable = findConditionMatchingVariable(rule, fuzzyVariable);
             if (isConditionFulfiled(conditionMatchingVariable, fuzzyVariable)) {
                 fulfiledConditions++;
+                ruleWeight = ApplyImplication(ruleWeight,conditionMatchingVariable,fuzzyVariable);
             }
-            if(fulfiledConditions == 2){
+            if (fulfiledConditions == 2) {
+                rule.getResult().setWeight(ruleWeight);
                 return Optional.of(rule.getResult());
             }
         }
@@ -62,15 +65,32 @@ public class ImplicationController {
 
     }
 
-    private boolean isConditionFulfiled(RuleCondition ruleCondition, FuzzyVariable fuzzyVariable) {
-        return fuzzyVariable.getFuzzySetMembers().stream().anyMatch(fuzzySetMember -> fuzzySetMember.getName().equals(ruleCondition.getValue()));
+    protected float ApplyImplication(float resultWeight, RuleCondition condition, FuzzyVariable fuzzyVariable) {
+
+        Optional<Float> degreeOfMembership = fuzzyVariable.getFuzzySetMembers()
+                .stream().filter(fuzzySetMember -> fuzzySetMember.getName().equals(condition.getValue()))
+                .findFirst()
+                .map(FuzzySetMember::getDegreeOfMembership);
+
+        return resultWeight *= degreeOfMembership.get();
     }
 
-    private RuleCondition findConditionMatchingVariable(Rule rule, FuzzyVariable variable) {
-        return rule.getRuleConditions().stream().filter(ruleCondition -> ruleCondition.getVariable().equals(variable.getVariableName())).findFirst().orElseGet(null);
+    protected boolean isConditionFulfiled(RuleCondition ruleCondition, FuzzyVariable fuzzyVariable) {
+        return fuzzyVariable
+                .getFuzzySetMembers()
+                .stream()
+                .anyMatch(fuzzySetMember -> fuzzySetMember.getName().equals(ruleCondition.getValue()));
     }
 
-    private List<FuzzyVariable> findVariablesForEvaluatingTheRule(Rule rule) {
+    protected RuleCondition findConditionMatchingVariable(Rule rule, FuzzyVariable variable) {
+        return rule.getRuleConditions()
+                .stream()
+                .filter(ruleCondition -> ruleCondition.getVariable().equals(variable.getVariableName()))
+                .findFirst()
+                .orElseGet(null);
+    }
+
+    protected List<FuzzyVariable> findVariablesForEvaluatingTheRule(Rule rule) {
 
         return fuzzyVariables
                 .stream()
@@ -80,7 +100,7 @@ public class ImplicationController {
 
     }
 
-    private boolean ruleContainsConditionForVariable(Rule rule, FuzzyVariable variable) {
+    protected boolean ruleContainsConditionForVariable(Rule rule, FuzzyVariable variable) {
         return rule.getRuleConditions()
                 .stream()
                 .map(RuleCondition::getVariable)
@@ -108,5 +128,9 @@ public class ImplicationController {
         }
 
 
+    }
+
+    public void setRuleSet(RuleSet ruleSet) {
+        this.ruleSet = ruleSet;
     }
 }

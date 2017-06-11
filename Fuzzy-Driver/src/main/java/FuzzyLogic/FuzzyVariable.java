@@ -26,4 +26,22 @@ public class FuzzyVariable {
     public List<FuzzySetMember> getFuzzySetMembers() {
         return fuzzySetMembers;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        FuzzyVariable that = (FuzzyVariable) o;
+
+        if (!variableName.equals(that.variableName)) return false;
+        return fuzzySetMembers.equals(that.fuzzySetMembers);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = variableName.hashCode();
+        result = 31 * result + fuzzySetMembers.hashCode();
+        return result;
+    }
 }

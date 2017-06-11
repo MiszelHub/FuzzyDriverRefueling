@@ -3,11 +3,11 @@
     <Rule>
         <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
         <RuleCondition variable="petrolStatnionsInRange">Few</RuleCondition>
-        <Result variable="amountOfFuel">Medium</Result>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
     </Rule>
     <Rule>
         <RuleCondition variable="fuelPriceOnCurrenstStation">High</RuleCondition>
         <RuleCondition variable="petrolStatnionsInRange">Many</RuleCondition>
-        <Result variable="amountOfFuel">Low</Result>
+        <Result variable="amountOfFuel" weight="1.0">Low</Result>
     </Rule>
 </RuleSet>

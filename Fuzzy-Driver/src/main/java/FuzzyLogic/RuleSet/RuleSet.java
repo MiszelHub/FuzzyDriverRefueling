@@ -20,6 +20,9 @@ public class RuleSet {
         rules = new HashSet<>();
     }
 
+    public void addRule(Rule rule){
+        rules.add(rule);
+    }
     public HashSet<Rule> getRules() {
         return rules;
     }
