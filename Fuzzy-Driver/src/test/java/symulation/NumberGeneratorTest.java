@@ -1,7 +1,10 @@
 package symulation;
 
-import org.junit.Before;
 import org.junit.Test;
+import symulation.generators.RandomFloatGenerator;
+import symulation.generators.RandomIntegerGenerator;
+import symulation.generators.RandomNumberGenerator;
+
 import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Created by user on 03.06.2017.

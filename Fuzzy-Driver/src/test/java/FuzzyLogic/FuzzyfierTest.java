@@ -22,12 +22,15 @@ public class FuzzyfierTest {
     @Test
     public void fuzzyfyPriceWithTriangularMembershipFunction() throws Exception {
 
+
         fuzzySets = new ArrayList<>();
         fuzzySets.add(new FuzzySet("Low", new TriangularMembershipFunction(2,6,8)));
         fuzzySets.add(new FuzzySet("Middle", new TriangularMembershipFunction(7,11,13)));
         fuzzySets.add(new FuzzySet("High", new TriangularMembershipFunction(12,16,18)));
-
-        fuzzyfier = new Fuzzyfier<>(fuzzySets);
+        LinguisticVariable linguisticVariable = new LinguisticVariable("Price",fuzzySets);
+        ArrayList<LinguisticVariable> linguisticVariables = new ArrayList<>();
+        linguisticVariables.add(linguisticVariable);
+        fuzzyfier = new Fuzzyfier<>(linguisticVariables);
 
         FuzzyVariable price = fuzzyfier.FuzzyfyVariable(PRICE, "Price");
 

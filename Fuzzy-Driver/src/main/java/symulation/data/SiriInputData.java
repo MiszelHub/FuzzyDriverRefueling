@@ -5,15 +5,15 @@ package symulation.data;
  */
 public class SiriInputData {
     public float fuelPriceOnCurrentStation;
-    public int petrolStatnionsInRange;
+    public int petrolStationsInRange;
     public int distanceToNextPetrolStation;
     public int distanceToJourneyEnd;
 
     @Override
-    public String toString() {
+    public String toString(){
         return "SiriInputData{" +
                 "fuelPriceOnCurrentStation=" + fuelPriceOnCurrentStation +
-                ", petrolStatnionsInRange=" + petrolStatnionsInRange +
+                ", petrolStationsInRange=" + petrolStationsInRange +
                 ", distanceToNextPetrolStation=" + distanceToNextPetrolStation +
                 ", distanceToJourneyEnd=" + distanceToJourneyEnd +
                 '}';

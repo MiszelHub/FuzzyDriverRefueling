@@ -38,7 +38,7 @@ public class TriangularMembershipFunction implements MembershipFunction {
 
     @Override
     public float getCharacteristicValue() {
-        return c;
+        return b;
     }
 
     @Override

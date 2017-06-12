@@ -1,6 +1,7 @@
 package symulation;
 
 import org.apache.log4j.Logger;
+import symulation.ai.Siri;
 import symulation.data.Car;
 import symulation.data.SiriInputData;
 import symulation.exceptions.OutOfFuelException;
@@ -46,10 +47,10 @@ public class CarController {
         inputData.distanceToJourneyEnd = estimateDistanceToJourneyEnd();
        if(!road.getPetrolStations().isEmpty()){
            inputData.distanceToNextPetrolStation = calculateDistanceToNextPetrolStation();
-           inputData.petrolStatnionsInRange = calculatePetrolStationsInRange();
+           inputData.petrolStationsInRange = calculatePetrolStationsInRange();
        }else{
            inputData.distanceToNextPetrolStation = 0;
-           inputData.petrolStatnionsInRange = 0;
+           inputData.petrolStationsInRange = 0;
        }
 
 

@@ -1,4 +1,4 @@
-package symulation;
+package symulation.generators;
 
 import symulation.data.PetrolStation;
 import symulation.data.Road;

@@ -3,9 +3,9 @@ package symulation;
 import org.junit.Before;
 import org.junit.Test;
 import symulation.data.Road;
+import symulation.generators.PetrolStationGenerator;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.groups.Tuple.tuple;
 
 /**
  * Created by user on 03.06.2017.

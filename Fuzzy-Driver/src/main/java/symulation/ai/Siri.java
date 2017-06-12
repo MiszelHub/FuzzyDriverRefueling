@@ -1,4 +1,4 @@
-package symulation;
+package symulation.ai;
 
 import symulation.data.PetrolStation;
 import symulation.data.SiriInputData;

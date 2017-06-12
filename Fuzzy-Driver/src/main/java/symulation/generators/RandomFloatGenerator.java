@@ -1,4 +1,4 @@
-package symulation;
+package symulation.generators;
 
 import java.util.Random;
 
