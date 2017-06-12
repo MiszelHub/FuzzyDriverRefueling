@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7739ff1-4f65-482f-be8e-77ec18272190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariableNotFoundException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/DefuzifierTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/PetrolStationGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/generators/PetrolStationGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/RandomFloatGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/generators/RandomFloatGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/RandomIntegerGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/generators/RandomIntegerGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/RandomNumberGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/generators/RandomNumberGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/Siri.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/symulation/StupidSiri.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/membershipFunctions/TriangularMembershipFunction.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/membershipFunctions/TriangularMembershipFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/App.java" afterPath="$PROJECT_DIR$/src/main/java/app/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/symulation/CarController.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/CarController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/RuleSet.xml" afterPath="$PROJECT_DIR$/src/main/resources/RuleSet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/symulation/NumberGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/symulation/NumberGeneratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/symulation/PetrolStationGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/symulation/PetrolStationGeneratorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java" afterPath="$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,146 +20,121 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59182256">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="StupidSiri.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CleverSiri.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FuzzySet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/fuzzySet/FuzzySet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#474#475#0" expanded="true" />
-                    <element signature="e#541#542#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FuzzyfierTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RandomIntegerGenerator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/generators/RandomIntegerGenerator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RandomFloatGenerator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/generators/RandomFloatGenerator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PetrolStationGenerator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/generators/PetrolStationGenerator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#1472#1473#0" expanded="true" />
-                    <element signature="e#1499#1500#0" expanded="true" />
-                    <element signature="e#1537#1538#0" expanded="true" />
-                    <element signature="e#1569#1570#0" expanded="true" />
-                    <element signature="e#1623#1624#0" expanded="true" />
-                    <element signature="e#1676#1677#0" expanded="true" />
-                    <element signature="e#1903#1904#0" expanded="true" />
-                    <element signature="e#1956#1957#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Fuzzyfier.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#365#366#0" expanded="true" />
-                    <element signature="e#427#428#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LinguisticVariableNotFoundException.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariableNotFoundException.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LinguisticVariable.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#518#519#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="SiriInputData.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="StupidSiri.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Defuzyfier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CleverSiri.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Siri.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JourneySimulation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/CarController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="40" column="124" lean-forward="true" selection-start-line="40" selection-start-column="124" selection-end-line="40" selection-end-column="124" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleSet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/RuleSet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImplicationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ImplicationController#0" expanded="false" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#4641#4642#0" expanded="true" />
+                <element signature="e#4678#4679#0" expanded="true" />
+                <element signature="e#4751#4752#0" expanded="true" />
+                <element signature="e#4803#4804#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuzzyfierTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="29" column="90" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="29" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -202,10 +165,7 @@
         <option value="$PROJECT_DIR$/src/main/java/symulation/exceptions/OutOfFuelException.java" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/Siri.java" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/StupidSiri.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/symulation/CarController.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/MembershipFunctionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Name.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/SetName.java" />
@@ -233,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/RuleSet/RuleResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/FuzzyVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/RuleSet/RuleSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/ImplicationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/membershipFunctions/MembershipFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/membershipFunctions/TrapezoidalMembershipFunction.java" />
@@ -246,10 +205,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/RuleSet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/generators/PetrolStationGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariableNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java" />
+        <option value="$PROJECT_DIR$/src/main/java/symulation/CarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/App.java" />
       </list>
     </option>
   </component>
@@ -1108,7 +1071,7 @@
       <workItem from="1497122426834" duration="14075000" />
       <workItem from="1497184458557" duration="742000" />
       <workItem from="1497200321981" duration="7892000" />
-      <workItem from="1497290073885" duration="4410000" />
+      <workItem from="1497290073885" duration="6350000" />
     </task>
     <task id="LOCAL-00001" summary="packet name changed">
       <created>1496511902493</created>
@@ -1264,7 +1227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497208122343</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Lepsiejszy Fuzyfier!!!!!!">
+      <created>1497294694657</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1497294694657</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1300,7 +1270,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60122000" />
+    <option name="totallyTimeSpent" value="62062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1323,7 +1293,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32329988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1365,7 +1335,8 @@
     <MESSAGE value="Evaluowanie Rulsów OSZ KURWA" />
     <MESSAGE value="Blok Wnioskowania Otestowany - Działa" />
     <MESSAGE value="blok wyostrzania napisany musimy teraz testowac" />
-    <option name="LAST_COMMIT_MESSAGE" value="blok wyostrzania napisany musimy teraz testowac" />
+    <MESSAGE value="Lepsiejszy Fuzyfier!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lepsiejszy Fuzyfier!!!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1414,27 +1385,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/CarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1634,17 +1584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#ImplicationController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/RuleSet/RuleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1668,16 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/DefuzifierTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1686,22 +1615,6 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#DefuzifierTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/RuleSet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1746,14 +1659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1762,24 +1667,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#518#519#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1802,22 +1689,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Fuzzyfier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="434">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#365#366#0" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/ImplicationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ImplicationController#0" expanded="false" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#4641#4642#0" expanded="true" />
+            <element signature="e#4678#4679#0" expanded="true" />
+            <element signature="e#4751#4752#0" expanded="true" />
+            <element signature="e#4803#4804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/FuzzyfierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="90" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="29" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/RuleSet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/CleverSiri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/Siri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="124" lean-forward="true" selection-start-line="40" selection-start-column="124" selection-end-line="40" selection-end-column="124" />
+          <folding />
         </state>
       </provider>
     </entry>

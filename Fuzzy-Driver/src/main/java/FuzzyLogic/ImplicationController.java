@@ -20,7 +20,7 @@ public class ImplicationController {
     private XmlFileParser<RuleSet> parser;
     private RuleSet ruleSet;
 
-    List<FuzzyVariable> fuzzyVariables;
+    private List<FuzzyVariable> fuzzyVariables;
 
     public ImplicationController(XmlFileParser<RuleSet> parser, String ruleSetFilePath) throws JAXBException {
         this.parser = parser;
@@ -128,6 +128,14 @@ public class ImplicationController {
         }
 
 
+    }
+
+    public List<FuzzyVariable> getFuzzyVariables() {
+        return fuzzyVariables;
+    }
+
+    public void setFuzzyVariables(List<FuzzyVariable> fuzzyVariables) {
+        this.fuzzyVariables = fuzzyVariables;
     }
 
     public void setRuleSet(RuleSet ruleSet) {

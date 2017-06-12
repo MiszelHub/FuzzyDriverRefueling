@@ -1,5 +1,6 @@
 package symulation;
 
+import FuzzyLogic.LinguisticVariableNotFoundException;
 import org.apache.log4j.Logger;
 import symulation.ai.Siri;
 import symulation.data.Car;
@@ -39,7 +40,7 @@ public class CarController {
         }
     }
 
-    public void analyzeFuelSituation() {
+    public void analyzeFuelSituation() throws LinguisticVariableNotFoundException {
         PetrolStation petrolStation = road.getPetrolStations().poll();
 
         SiriInputData inputData = new SiriInputData();

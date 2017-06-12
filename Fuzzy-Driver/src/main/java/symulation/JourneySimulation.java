@@ -1,5 +1,6 @@
 package symulation;
 
+import FuzzyLogic.LinguisticVariableNotFoundException;
 import app.App;
 import org.apache.log4j.Logger;
 import symulation.exceptions.OutOfFuelException;
@@ -19,7 +20,7 @@ public class JourneySimulation {
         this.road = road;
     }
 
-    public void startSimulation() throws OutOfFuelException {
+    public void startSimulation() throws OutOfFuelException, LinguisticVariableNotFoundException {
         while (carController.getCar().getPositionOnRoad() != road.getDistance()) {
 
 
