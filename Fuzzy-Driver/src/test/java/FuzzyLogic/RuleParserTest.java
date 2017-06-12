@@ -3,6 +3,7 @@ package FuzzyLogic;
 import FuzzyLogic.RuleSet.RuleSet;
 import app.XmlRuleSetParser;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -19,6 +20,7 @@ public class RuleParserTest {
     }
 
     @Test
+    @Ignore
     public void ReadRuleSetFromFile() throws Exception {
         RuleSet ruleSet = parser.readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\RuleSet.xml");
 
