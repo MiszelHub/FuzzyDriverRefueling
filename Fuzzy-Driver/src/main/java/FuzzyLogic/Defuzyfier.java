@@ -2,8 +2,7 @@ package FuzzyLogic;
 
 import FuzzyLogic.RuleSet.RuleResult;
 import FuzzyLogic.fuzzySet.FuzzySet;
-import FuzzyLogic.membershipFunctions.MembershipFunction;
-import com.sun.istack.internal.Pool;
+
 
 import java.util.List;
 

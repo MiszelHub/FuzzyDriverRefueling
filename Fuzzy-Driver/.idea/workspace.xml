@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7739ff1-4f65-482f-be8e-77ec18272190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/FuzzyLogic/RuleParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/FuzzyLogic/RuleParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java" afterPath="$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StupidSiri.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
+      <file leaf-file-name="Defuzyfier.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="51">
+              <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -78,12 +78,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RuleParserTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RuleParserTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/RuleParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/LinguisticVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/fuzzySet/FuzzySet.java" />
         <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/membershipFunctions/TriangularMembershipFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/DefuzifierTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/symulation/data/SiriInputData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/RuleSet.xml" />
@@ -206,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/main/java/symulation/JourneySimulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/FuzzyLogic/RuleParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java" />
       </list>
     </option>
   </component>
@@ -1064,7 +1066,7 @@
       <workItem from="1497122426834" duration="14075000" />
       <workItem from="1497184458557" duration="742000" />
       <workItem from="1497200321981" duration="7892000" />
-      <workItem from="1497290073885" duration="6439000" />
+      <workItem from="1497290073885" duration="6623000" />
     </task>
     <task id="LOCAL-00001" summary="packet name changed">
       <created>1496511902493</created>
@@ -1234,7 +1236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497296630546</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Ignoruje test z plikiem">
+      <created>1497296724160</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1497296724160</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1270,7 +1279,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62151000" />
+    <option name="totallyTimeSpent" value="62335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1337,7 +1346,8 @@
     <MESSAGE value="blok wyostrzania napisany musimy teraz testowac" />
     <MESSAGE value="Lepsiejszy Fuzyfier!!!!!!" />
     <MESSAGE value=":(" />
-    <option name="LAST_COMMIT_MESSAGE" value=":(" />
+    <MESSAGE value="Ignoruje test z plikiem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignoruje test z plikiem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1694,16 +1704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/symulation/ai/StupidSiri.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1797,8 +1797,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FuzzyLogic/RuleParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FuzzyLogic/Defuzyfier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
           <folding />
         </state>
       </provider>
