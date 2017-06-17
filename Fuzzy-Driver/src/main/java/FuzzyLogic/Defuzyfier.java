@@ -2,6 +2,7 @@ package FuzzyLogic;
 
 import FuzzyLogic.RuleSet.RuleResult;
 import FuzzyLogic.fuzzySet.FuzzySet;
+import org.apache.log4j.Logger;
 
 
 import java.util.List;
@@ -13,6 +14,7 @@ public class Defuzyfier {
     private ImplicationController implicationController;
     private LinguisticVariable linguisticVariable;
 
+    private final static Logger logger = Logger.getLogger(Defuzyfier.class);
     public Defuzyfier(ImplicationController implicationController, LinguisticVariable linguisticVariable) {
         this.implicationController = implicationController;
         this.linguisticVariable = linguisticVariable;
@@ -27,10 +29,18 @@ public class Defuzyfier {
             sumOfWeights += ruleResult.getWeight();
         }
 
-        return sumOfRuleWeightAndCharacteristicValueProduct/sumOfWeights;
+        return calculateAmmountOfFuel(sumOfRuleWeightAndCharacteristicValueProduct,sumOfWeights);
 
     }
 
+    private float calculateAmmountOfFuel(float sumOfRuleWeightAndCharacteristicValueProduct, float sumOfWeights){
+        if(sumOfWeights == 0.0f){
+            logger.error("NaN");
+            return sumOfRuleWeightAndCharacteristicValueProduct/1f;
+        }else{
+            return sumOfRuleWeightAndCharacteristicValueProduct/sumOfWeights;
+        }
+    }
     private float getCharacteristicValueForTheSet(String setName) {
         return linguisticVariable.getFuzzySets().stream()
                 .filter(fuzzySet -> fuzzySet.getFuzzySetName().equals(setName))

@@ -6,11 +6,13 @@ import FuzzyLogic.RuleSet.RuleResult;
 import FuzzyLogic.RuleSet.RuleSet;
 import FuzzyLogic.fuzzySet.FuzzySetMember;
 import app.XmlFileParser;
+import org.apache.log4j.Logger;
 
 import javax.xml.bind.JAXBException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.locks.Condition;
 import java.util.stream.Collectors;
 
 /**
@@ -19,7 +21,7 @@ import java.util.stream.Collectors;
 public class ImplicationController {
     private XmlFileParser<RuleSet> parser;
     private RuleSet ruleSet;
-
+    private static final Logger logger = Logger.getLogger(ImplicationController.class);
     private List<FuzzyVariable> fuzzyVariables;
 
     public ImplicationController(XmlFileParser<RuleSet> parser, String ruleSetFilePath) throws JAXBException {
@@ -34,17 +36,20 @@ public class ImplicationController {
     }
 
     public List<RuleResult> evaluateRules() {
-
-        return ruleSet.getRules()
+        logger.info("Evaluating Rules");
+        List<RuleResult> ruleResults = ruleSet.getRules()
                 .stream()
                 .map(rule -> eveluateRule(rule, findVariablesForEvaluatingTheRule(rule)))
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .collect(Collectors.toList());
+        logger.info("Rules Passed "+ruleResults.size());
+        return ruleResults;
 
     }
 
     protected Optional<RuleResult> eveluateRule(Rule rule, List<FuzzyVariable> fuzzyVariables) {
+       // logger.info("Rule to Evaluate :"+ rule.toString());
         float ruleWeight = rule.getResult().getWeight();
         int fulfiledConditions = 0;
 
@@ -53,13 +58,16 @@ public class ImplicationController {
             if (isConditionFulfiled(conditionMatchingVariable, fuzzyVariable)) {
                 fulfiledConditions++;
                 ruleWeight = ApplyImplication(ruleWeight,conditionMatchingVariable,fuzzyVariable);
+
             }
-            if (fulfiledConditions == 2) {
+            if (fulfiledConditions == rule.getRuleConditions().size()) {
                 rule.getResult().setWeight(ruleWeight);
+                logger.info("RULE PASSED "+rule);
+                logger.info("result Weight "+ruleWeight);
                 return Optional.of(rule.getResult());
             }
         }
-
+        //logger.info("Rule FAILED");
         return Optional.empty();
 
 
@@ -72,14 +80,19 @@ public class ImplicationController {
                 .findFirst()
                 .map(FuzzySetMember::getDegreeOfMembership);
 
-        return resultWeight *= degreeOfMembership.get();
+        if(degreeOfMembership.get() < resultWeight){
+            return degreeOfMembership.get();
+        }else{
+            return resultWeight;
+        }
+        //return resultWeight *= degreeOfMembership.get();
     }
 
     protected boolean isConditionFulfiled(RuleCondition ruleCondition, FuzzyVariable fuzzyVariable) {
         return fuzzyVariable
                 .getFuzzySetMembers()
                 .stream()
-                .anyMatch(fuzzySetMember -> fuzzySetMember.getName().equals(ruleCondition.getValue()));
+                .anyMatch(fuzzySetMember -> fuzzySetMember.getName().equals(ruleCondition.getValue()) && fuzzySetMember.getDegreeOfMembership() != 0);
     }
 
     protected RuleCondition findConditionMatchingVariable(Rule rule, FuzzyVariable variable) {

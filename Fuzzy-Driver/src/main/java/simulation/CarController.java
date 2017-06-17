@@ -40,7 +40,7 @@ public class CarController {
         }
     }
 
-    public void analyzeFuelSituation() throws LinguisticVariableNotFoundException {
+    public float analyzeFuelSituation() throws LinguisticVariableNotFoundException {
         PetrolStation petrolStation = road.getPetrolStations().poll();
 
         SiriInputData inputData = new SiriInputData();
@@ -56,9 +56,10 @@ public class CarController {
 
 
         logger.info(inputData.toString());
+        float fuelAmmount = siri.estimateNeededFuel(inputData);
+        loadFuel(fuelAmmount);
 
-        loadFuel(siri.estimateNeededFuel(inputData));
-
+        return fuelAmmount;
     }
 
     private int calculatePetrolStationsInRange() {

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RuleSet>
     <Rule>
-        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
         <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
-        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
     </Rule>
     <Rule>
-        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
-        <RuleCondition variable="distanceToNextPetrolStation">Medium</RuleCondition>
-        <Result variable="amountOfFuel" weight="1.0">Low</Result>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
     </Rule>
     <Rule>
         <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
@@ -17,17 +17,17 @@
     </Rule>
     <Rule>
         <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
-        <RuleCondition variable="petrolStationsInRange">Many</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Several</RuleCondition>
         <Result variable="amountOfFuel" weight="1.0">Low</Result>
     </Rule>
     <Rule>
         <RuleCondition variable="distanceToNextPetrolStation">Low</RuleCondition>
-        <RuleCondition variable="petrolStationsInRange">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">A lot</RuleCondition>
         <Result variable="amountOfFuel" weight="1.0">Low</Result>
     </Rule>
     <Rule>
         <RuleCondition variable="distanceToNextPetrolStation">Medium</RuleCondition>
-        <RuleCondition variable="petrolStationsInRange">Medium</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
         <Result variable="amountOfFuel" weight="1.0">Medium</Result>
     </Rule>
     <Rule>
@@ -48,7 +48,7 @@
     <Rule>
         <RuleCondition variable="distanceToJourneyEnd">High</RuleCondition>
         <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
-        <Result variable="amountOfFuel" weight="1.0">Low</Result>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
     </Rule>
     <Rule>
         <RuleCondition variable="distanceToJourneyEnd">Medium</RuleCondition>
@@ -60,4 +60,88 @@
         <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
         <Result variable="amountOfFuel" weight="1.0">Low</Result>
     </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">High</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">Low</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">Medium</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">Low</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">High</RuleCondition>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">High</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">Medium</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">Medium</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">Medium</RuleCondition>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <RuleCondition variable="distanceToNextPetrolStation">Medium</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">High</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToJourneyEnd">Low</RuleCondition>
+        <RuleCondition variable="petrolStationsInRange">Few</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">High</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="distanceToNextPetrolStation">Medium</RuleCondition>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">High</RuleCondition>
+        <RuleCondition variable="distanceToJourneyEnd">Low</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Low</Result>
+    </Rule>
+    <Rule>
+        <RuleCondition variable="fuelPriceOnCurrentStation">Low</RuleCondition>
+        <RuleCondition variable="distanceToJourneyEnd">Low</RuleCondition>
+        <Result variable="amountOfFuel" weight="1.0">Medium</Result>
+    </Rule>
+
 </RuleSet>

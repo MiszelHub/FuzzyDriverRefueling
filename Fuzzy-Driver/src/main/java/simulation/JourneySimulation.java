@@ -11,6 +11,7 @@ import simulation.data.Road;
 public class JourneySimulation {
     private CarController carController;
     private Road road;
+    private float totalJourneyCost = 0.0f;
     final static Logger logger = Logger.getLogger(JourneySimulation.class);
 
     public JourneySimulation(CarController carController, Road road) {
@@ -25,7 +26,7 @@ public class JourneySimulation {
             if (!road.getPetrolStations().isEmpty()) {
                 if (carController.getCar().getPositionOnRoad() == carController.getNextStation().getPosition()) {
                     logger.info("Arrived at station " + carController.getNextStation().toString());
-                    carController.analyzeFuelSituation();
+                    totalJourneyCost += carController.analyzeFuelSituation();
                 }
             }
 
@@ -33,6 +34,7 @@ public class JourneySimulation {
 
         }
         logger.info("Arrived at destination "+carController.getCar().getPositionOnRoad());
+        logger.info("Journey Cost "+totalJourneyCost);
     }
 
     private void drive() throws OutOfFuelException {
