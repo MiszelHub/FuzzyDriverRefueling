@@ -60,7 +60,7 @@ public class App {
             petrolStationGenerator.generateStationsOnTheRoad();
 
 
-            JourneySimulation journeySimulation = new JourneySimulation(carController, road);
+            JourneySimulation journeySimulation = new JourneySimulation(carController, road, true);
 
 
             logger.info("started simulation");

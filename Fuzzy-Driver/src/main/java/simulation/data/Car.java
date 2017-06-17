@@ -7,6 +7,7 @@ public class Car {
 
     private float fuelCapacity = 35f;
     private float currentFuelLevel = 0;
+    public final static float STANDARD_FUEL_CONSUMPTION = 7;
     private float fuelConsumptionPerHundredKilometers = 7;
     private int positionOnRoad = 0;
 
@@ -14,6 +15,9 @@ public class Car {
 
     }
 
+    public void modifyFuelConsumptionPerHundredKilometers(float modifier){
+        fuelConsumptionPerHundredKilometers += modifier;
+    }
 
     public float getFuelCapacity() {
         return fuelCapacity;
@@ -28,7 +32,7 @@ public class Car {
         return fuelConsumptionPerHundredKilometers;
     }
 
-    public void setFuelConsumptionPerHundredKilometers(short fuelConsumptionPerHundredKilometers) {
+    public void setFuelConsumptionPerHundredKilometers(float fuelConsumptionPerHundredKilometers) {
         this.fuelConsumptionPerHundredKilometers = fuelConsumptionPerHundredKilometers;
     }
 
