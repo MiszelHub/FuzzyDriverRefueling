@@ -27,6 +27,7 @@ public class App {
 
     public static void main(String[] args) {
         try {
+
             Car car = new Car();
             Road road = new Road();
             ImplicationController implicationController = new ImplicationController(new XmlRuleSetParser(), "C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\RuleSet.xml");
@@ -41,9 +42,11 @@ public class App {
 
             XMLLinguisticVariablesParser parser = new XMLLinguisticVariablesParser();
             LinguisticVariables linguisticVariablesXML = parser
-                    .readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTriangularMembershipFunction.xml");
-
-            Mapper<LinguisticVariable> mapper = new LinguisticVariablesTriangularMapper(linguisticVariablesXML);
+                    //.readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTriangularMembershipFunction.xml");
+                    .readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTrapezoidalMembershipFunction.xml");
+            Mapper<LinguisticVariable> mapper
+                   // = new LinguisticVariablesTriangularMapper(linguisticVariablesXML);
+                    = new LinguisticVariablesTrapezoidalMaper(linguisticVariablesXML);
 
             ArrayList<LinguisticVariable> linguisticVariables = mapper.map();
 
@@ -64,6 +67,7 @@ public class App {
             journeySimulation.startSimulation();
         } catch (OutOfFuelException | LinguisticVariableNotFoundException | JAXBException e) {
             logger.error(e.getMessage());
+
         }
     }
 }
