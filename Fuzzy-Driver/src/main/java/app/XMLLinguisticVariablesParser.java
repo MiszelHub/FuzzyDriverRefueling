@@ -21,4 +21,11 @@ public class XMLLinguisticVariablesParser implements XmlFileParser<LinguisticVar
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
         return (LinguisticVariables) jaxbUnmarshaller.unmarshal(inputFile);
     }
+
+    @Override
+    public void writeFile(String filename, LinguisticVariables object) throws JAXBException {
+
+    }
+
+
 }

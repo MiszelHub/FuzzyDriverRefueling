@@ -1,14 +1,20 @@
 package simulation.data;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
  * Created by user on 03.06.2017.
  */
+@XmlRootElement
 public class Road
 {
+    @XmlElement
     private int distance = 2000;
+    @XmlElement
     private final Queue<PetrolStation> petrolStations;
     public Road()
     {
@@ -24,6 +30,7 @@ public class Road
     public void addPetrolStation(PetrolStation petrolStation){
         petrolStations.add(petrolStation);
     }
+    @XmlTransient
     public int getDistance()
     {
         return distance;

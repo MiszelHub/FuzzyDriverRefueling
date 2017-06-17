@@ -29,7 +29,8 @@ public class App {
         try {
 
             Car car = new Car();
-            Road road = new Road();
+            RoadXmlFileParser roadXmlFileParser = new RoadXmlFileParser();
+            Road road = roadXmlFileParser.readFile("road2.xml");
             ImplicationController implicationController = new ImplicationController(new XmlRuleSetParser(), "C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\RuleSet.xml");
             ArrayList<FuzzySet> fuzzySets = new ArrayList<>();
             fuzzySets.add(new FuzzySet("Low", new TriangularMembershipFunction(2,6,8)));
@@ -42,10 +43,10 @@ public class App {
 
             XMLLinguisticVariablesParser parser = new XMLLinguisticVariablesParser();
             LinguisticVariables linguisticVariablesXML = parser
-                    //.readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTriangularMembershipFunction.xml");
+                   // .readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTriangularMembershipFunction.xml");
                     .readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTrapezoidalMembershipFunction.xml");
             Mapper<LinguisticVariable> mapper
-                   // = new LinguisticVariablesTriangularMapper(linguisticVariablesXML);
+                  //  = new LinguisticVariablesTriangularMapper(linguisticVariablesXML);
                     = new LinguisticVariablesTrapezoidalMaper(linguisticVariablesXML);
 
             ArrayList<LinguisticVariable> linguisticVariables = mapper.map();
@@ -54,17 +55,21 @@ public class App {
             Fuzzyfier<Float> fuzzyfier = new Fuzzyfier<>(linguisticVariables);
             Siri siri = new CleverSiri(implicationController, defuzyfier,fuzzyfier);
 
-            CarController carController = new CarController(car, road, siri);
+            CarController carController = new CarController(car, road, new StupidSiri());
 
-            PetrolStationGenerator petrolStationGenerator = new PetrolStationGenerator(road);
-            petrolStationGenerator.generateStationsOnTheRoad();
+//            PetrolStationGenerator petrolStationGenerator = new PetrolStationGenerator(road);
+//            petrolStationGenerator.generateStationsOnTheRoad();
 
 
-            JourneySimulation journeySimulation = new JourneySimulation(carController, road, true);
+
+            JourneySimulation journeySimulation = new JourneySimulation(carController, road, false);
 
 
             logger.info("started simulation");
             journeySimulation.startSimulation();
+
+            logger.info("Total Fuel Ammout "+ Statistics.totalFuel);
+            logger.info("Total Fuel Price "+ Statistics.totalPrice);
         } catch (OutOfFuelException | LinguisticVariableNotFoundException | JAXBException e) {
             logger.error(e.getMessage());
 

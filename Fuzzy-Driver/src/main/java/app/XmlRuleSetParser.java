@@ -4,6 +4,7 @@ import FuzzyLogic.RuleSet.RuleSet;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
@@ -18,5 +19,10 @@ public class XmlRuleSetParser implements XmlFileParser<RuleSet> {
         JAXBContext jaxbContext = JAXBContext.newInstance(RuleSet.class);
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
         return (RuleSet) jaxbUnmarshaller.unmarshal(inputFile);
+    }
+
+    @Override
+    public void writeFile(String filename, RuleSet object) throws JAXBException {
+
     }
 }

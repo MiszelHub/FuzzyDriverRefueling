@@ -7,4 +7,6 @@ import javax.xml.bind.JAXBException;
  */
 public interface XmlFileParser<T> {
     T readFile(String fileName) throws JAXBException;
+
+    void writeFile(String filename, T object) throws JAXBException;
 }

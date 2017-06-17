@@ -1,5 +1,6 @@
 package simulation;
 
+import app.RoadXmlFileParser;
 import org.junit.Before;
 import org.junit.Test;
 import simulation.data.Road;
@@ -34,5 +35,12 @@ public class PetrolStationGeneratorTest {
 
 
         System.out.println(road.getPetrolStations().toString());
+    }
+
+    @Test
+    public void savePetrolStations() throws Exception {
+        generator.generateStationsOnTheRoad();
+        RoadXmlFileParser parser = new RoadXmlFileParser();
+        parser.writeFile("road5.xml",road);
     }
 }

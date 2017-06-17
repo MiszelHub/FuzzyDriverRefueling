@@ -1,6 +1,7 @@
 package simulation;
 
 import FuzzyLogic.LinguisticVariableNotFoundException;
+import app.Statistics;
 import org.apache.log4j.Logger;
 import simulation.ai.Siri;
 import simulation.data.Car;
@@ -57,6 +58,8 @@ public class CarController {
 
         logger.info(inputData.toString());
         float fuelAmmount = siri.estimateNeededFuel(inputData);
+        Statistics.totalFuel += fuelAmmount;
+        Statistics.totalPrice += fuelAmmount * inputData.fuelPriceOnCurrentStation;
         loadFuel(fuelAmmount);
 
         return fuelAmmount;
@@ -101,6 +104,9 @@ public class CarController {
         return car;
     }
 
+    public void setSiri(Siri siri) {
+        this.siri = siri;
+    }
 
     public Road getRoad() {
         return road;

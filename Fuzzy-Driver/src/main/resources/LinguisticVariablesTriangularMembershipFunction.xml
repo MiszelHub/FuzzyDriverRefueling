@@ -17,19 +17,19 @@
         <FuzzySetBoundaries name="Few">
             <a>-1</a>
             <b>0</b>
-            <c>3</c>
+            <c>2</c>
             <d>0</d>
         </FuzzySetBoundaries>
         <FuzzySetBoundaries name="Several">
-            <a>2</a>
-            <b>5</b>
-            <c>7</c>
+            <a>1</a>
+            <b>3</b>
+            <c>4</c>
             <d>0</d>
         </FuzzySetBoundaries>
         <FuzzySetBoundaries name="A lot">
-            <a>6</a>
-            <b>10</b>
-            <c>11</c>
+            <a>3</a>
+            <b>5</b>
+            <c>6</c>
             <d>0</d>
         </FuzzySetBoundaries>
     </variable>
@@ -43,11 +43,17 @@
         <FuzzySetBoundaries name="Medium">
             <a>90</a>
             <b>120</b>
-            <c>160</c>
+            <c>150</c>
             <d>0</d>
         </FuzzySetBoundaries>
         <FuzzySetBoundaries name="High">
-            <a>150</a>
+            <a>140</a>
+            <b>170</b>
+            <c>180</c>
+            <d>0</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="VeryHigh">
+            <a>175</a>
             <b>200</b>
             <c>220</c>
             <d>0</d>

@@ -14,7 +14,7 @@ public class JourneySimulation {
     private CarController carController;
     private Road road;
     private boolean isRandomEventEnabled;
-    private float totalJourneyCost = 0.0f;
+    private float totalFuel = 0.0f;
     private ProbabilityGenerator probabilityGenerator;
     final static Logger logger = Logger.getLogger(JourneySimulation.class);
 
@@ -33,7 +33,7 @@ public class JourneySimulation {
                 if (carController.getCar().getPositionOnRoad() == carController.getNextStation().getPosition()) {
                     carController.getCar().setFuelConsumptionPerHundredKilometers(Car.STANDARD_FUEL_CONSUMPTION);
                     logger.info("Arrived at station " + carController.getNextStation().toString());
-                    totalJourneyCost += carController.analyzeFuelSituation();
+                    totalFuel += carController.analyzeFuelSituation();
 
                     if (isRandomEventEnabled(isRandomEventEnabled)) {
                         if (probabilityGenerator.isProbable(0.25)) {
@@ -49,7 +49,7 @@ public class JourneySimulation {
 
         }
         logger.info("Arrived at destination " + carController.getCar().getPositionOnRoad());
-        logger.info("Journey Cost " + totalJourneyCost);
+        logger.info("Journey Cost " + totalFuel);
     }
 
     private void drive() throws OutOfFuelException {

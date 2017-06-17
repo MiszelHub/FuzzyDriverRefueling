@@ -1,26 +1,32 @@
 package simulation.data;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 /**
  * Created by user on 03.06.2017.
  */
-public class PetrolStation
-{
+public class PetrolStation {
+    @XmlElement
     private int position = 0;
+    @XmlElement
     private float petrolPrice = 3.5f;
 
-    public PetrolStation(int position, float petrolPrice)
-    {
+    public PetrolStation() {
+    }
+
+    public PetrolStation(int position, float petrolPrice) {
         this.position = position;
         this.petrolPrice = petrolPrice;
     }
 
-    public int getPosition()
-    {
+    @XmlTransient
+    public int getPosition() {
         return position;
     }
 
-    public float getPetrolPrice()
-    {
+    @XmlTransient
+    public float getPetrolPrice() {
         return petrolPrice;
     }
 
