@@ -10,6 +10,7 @@ import simulation.JourneySimulation;
 import simulation.ai.CleverSiri;
 import simulation.ai.Siri;
 import simulation.data.LinguisticVariables;
+import simulation.data.PetrolStation;
 import simulation.generators.PetrolStationGenerator;
 import simulation.ai.StupidSiri;
 import simulation.data.Car;
@@ -18,6 +19,9 @@ import simulation.exceptions.OutOfFuelException;
 
 import javax.xml.bind.JAXBException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Hello world!
@@ -30,7 +34,16 @@ public class App {
 
             Car car = new Car();
             RoadXmlFileParser roadXmlFileParser = new RoadXmlFileParser();
-            Road road = roadXmlFileParser.readFile("road2.xml");
+
+
+            Road road = roadXmlFileParser.readFile("road3.xml");
+            float averagePrice=0;
+            int roadPetrolStationCount = road.getPetrolStations().size();
+            List<Float> priceList = road.getPetrolStations().stream().map(PetrolStation::getPetrolPrice).collect(Collectors.toList());
+            for(Float price : priceList){
+                averagePrice += price;
+            }
+
             ImplicationController implicationController = new ImplicationController(new XmlRuleSetParser(), "C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\RuleSet.xml");
             ArrayList<FuzzySet> fuzzySets = new ArrayList<>();
             fuzzySets.add(new FuzzySet("Low", new TriangularMembershipFunction(2,6,8)));
@@ -55,7 +68,7 @@ public class App {
             Fuzzyfier<Float> fuzzyfier = new Fuzzyfier<>(linguisticVariables);
             Siri siri = new CleverSiri(implicationController, defuzyfier,fuzzyfier);
 
-            CarController carController = new CarController(car, road, new StupidSiri());
+            CarController carController = new CarController(car, road, siri);
 
 //            PetrolStationGenerator petrolStationGenerator = new PetrolStationGenerator(road);
 //            petrolStationGenerator.generateStationsOnTheRoad();
@@ -70,6 +83,9 @@ public class App {
 
             logger.info("Total Fuel Ammout "+ Statistics.totalFuel);
             logger.info("Total Fuel Price "+ Statistics.totalPrice);
+            logger.info("Average Bought Fuel Price " +Statistics.totalPrice/Statistics.totalFuel);
+
+            logger.info("Average Fuel Price on Fuel Station "+ averagePrice/roadPetrolStationCount);
         } catch (OutOfFuelException | LinguisticVariableNotFoundException | JAXBException e) {
             logger.error(e.getMessage());
 
