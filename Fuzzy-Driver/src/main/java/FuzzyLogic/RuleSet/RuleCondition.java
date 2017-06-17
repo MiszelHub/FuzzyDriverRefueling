@@ -2,6 +2,7 @@ package FuzzyLogic.RuleSet;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlValue;
 
 /**
@@ -22,6 +23,7 @@ public class RuleCondition {
         this.value = value;
     }
 
+    @XmlTransient
     public String getVariable() {
         return variable;
     }
@@ -30,6 +32,7 @@ public class RuleCondition {
         this.variable = variable;
     }
 
+    @XmlTransient
     public String getValue() {
         return value;
     }

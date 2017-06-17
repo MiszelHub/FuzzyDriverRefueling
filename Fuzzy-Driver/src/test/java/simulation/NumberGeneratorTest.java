@@ -1,9 +1,9 @@
-package symulation;
+package simulation;
 
 import org.junit.Test;
-import symulation.generators.RandomFloatGenerator;
-import symulation.generators.RandomIntegerGenerator;
-import symulation.generators.RandomNumberGenerator;
+import simulation.generators.RandomFloatGenerator;
+import simulation.generators.RandomIntegerGenerator;
+import simulation.generators.RandomNumberGenerator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 /**

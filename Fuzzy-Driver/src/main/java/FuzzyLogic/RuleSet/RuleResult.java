@@ -1,10 +1,7 @@
 package FuzzyLogic.RuleSet;
 
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.*;
 
 
 public class RuleResult {
@@ -34,10 +31,12 @@ public class RuleResult {
         return variable;
     }
 
+    @XmlTransient
     public String getValue() {
         return value;
     }
 
+    @XmlTransient
     public float getWeight() {
         return weight;
     }

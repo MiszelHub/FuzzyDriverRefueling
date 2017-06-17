@@ -5,15 +5,16 @@ import FuzzyLogic.*;
 import FuzzyLogic.fuzzySet.FuzzySet;
 import FuzzyLogic.membershipFunctions.TriangularMembershipFunction;
 import org.apache.log4j.Logger;
-import symulation.CarController;
-import symulation.JourneySimulation;
-import symulation.ai.CleverSiri;
-import symulation.ai.Siri;
-import symulation.generators.PetrolStationGenerator;
-import symulation.ai.StupidSiri;
-import symulation.data.Car;
-import symulation.data.Road;
-import symulation.exceptions.OutOfFuelException;
+import simulation.CarController;
+import simulation.JourneySimulation;
+import simulation.ai.CleverSiri;
+import simulation.ai.Siri;
+import simulation.data.LinguisticVariables;
+import simulation.generators.PetrolStationGenerator;
+import simulation.ai.StupidSiri;
+import simulation.data.Car;
+import simulation.data.Road;
+import simulation.exceptions.OutOfFuelException;
 
 import javax.xml.bind.JAXBException;
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public class App {
         try {
             Car car = new Car();
             Road road = new Road();
-            ImplicationController implicationController = new ImplicationController(new XmlRuleSetParser(), "../resources/RuleSet.xml");
+            ImplicationController implicationController = new ImplicationController(new XmlRuleSetParser(), "C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\RuleSet.xml");
             ArrayList<FuzzySet> fuzzySets = new ArrayList<>();
             fuzzySets.add(new FuzzySet("Low", new TriangularMembershipFunction(2,6,8)));
             fuzzySets.add(new FuzzySet("Medium", new TriangularMembershipFunction(7,11,13)));
@@ -37,12 +38,20 @@ public class App {
 
             Defuzyfier defuzyfier = new Defuzyfier(implicationController, linguisticVariable);
 
-            ArrayList<LinguisticVariable> linguisticVariables = new ArrayList<>();
-            //TODO: Wymyslić przedziały zbiorów rozmytych dla Trapeziodalneij i Trójkątnej funkcji przynaleznosci dla wszystkoich zmiennych :(
+
+            XMLLinguisticVariablesParser parser = new XMLLinguisticVariablesParser();
+            LinguisticVariables linguisticVariablesXML = parser
+                    .readFile("C:\\Users\\user\\Desktop\\Repozytoria\\FuzzyDriverRefueling\\Fuzzy-Driver\\src\\main\\resources\\LinguisticVariablesTriangularMembershipFunction.xml");
+
+            Mapper<LinguisticVariable> mapper = new LinguisticVariablesTriangularMapper(linguisticVariablesXML);
+
+            ArrayList<LinguisticVariable> linguisticVariables = mapper.map();
+
 
             Fuzzyfier<Float> fuzzyfier = new Fuzzyfier<>(linguisticVariables);
             Siri siri = new CleverSiri(implicationController, defuzyfier,fuzzyfier);
-            CarController carController = new CarController(car, road, new StupidSiri());
+
+            CarController carController = new CarController(car, road, siri);
 
             PetrolStationGenerator petrolStationGenerator = new PetrolStationGenerator(road);
             petrolStationGenerator.generateStationsOnTheRoad();
@@ -54,7 +63,7 @@ public class App {
             logger.info("started simulation");
             journeySimulation.startSimulation();
         } catch (OutOfFuelException | LinguisticVariableNotFoundException | JAXBException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
     }
 }

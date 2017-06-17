@@ -1,6 +1,6 @@
-package symulation.ai;
+package simulation.ai;
 
-import symulation.data.SiriInputData;
+import simulation.data.SiriInputData;
 
 /**
  * Created by user on 04.06.2017.

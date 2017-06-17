@@ -1,4 +1,4 @@
-package symulation.data;
+package simulation.data;
 
 /**
  * Created by user on 04.06.2017.

@@ -1,11 +1,10 @@
-package symulation.ai;
+package simulation.ai;
 
 import FuzzyLogic.*;
-import FuzzyLogic.RuleSet.RuleResult;
-import symulation.data.SiriInputData;
+import org.apache.log4j.Logger;
+import simulation.data.SiriInputData;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by user on 12.06.2017.
@@ -15,6 +14,7 @@ public class CleverSiri implements Siri {
     ImplicationController implicationController;
     Defuzyfier defuzyfier;
 
+    private static final Logger logger = Logger.getLogger(CleverSiri.class);
     public CleverSiri(ImplicationController implicationController, Defuzyfier defuzyfier, Fuzzyfier<Float> fuzzyfier) {
         this.implicationController = implicationController;
         this.defuzyfier = defuzyfier;
@@ -25,8 +25,9 @@ public class CleverSiri implements Siri {
     public float estimateNeededFuel(SiriInputData inputData) throws LinguisticVariableNotFoundException {
 
         implicationController.setFuzzyVariables(fuzifyVariables(inputData));
-
-        return defuzyfier.getFuelAmmountToTank();
+        float fuelAmmountToTank = defuzyfier.getFuelAmmountToTank();
+        logger.info("Fuel to tank "+fuelAmmountToTank);
+        return fuelAmmountToTank;
     }
 
     protected ArrayList<FuzzyVariable> fuzifyVariables(SiriInputData inputData) throws LinguisticVariableNotFoundException {

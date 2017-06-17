@@ -1,4 +1,4 @@
-package symulation.generators;
+package simulation.generators;
 
 /**
  * Created by user on 03.06.2017.

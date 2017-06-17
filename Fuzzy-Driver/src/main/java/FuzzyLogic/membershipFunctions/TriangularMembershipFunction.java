@@ -60,4 +60,13 @@ public class TriangularMembershipFunction implements MembershipFunction {
         result = 31 * result + ( c != +0.0f ? Float.floatToIntBits(c) : 0 );
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "TriangularMembershipFunction{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }

@@ -1,13 +1,13 @@
-package symulation;
+package simulation;
 
 import FuzzyLogic.LinguisticVariableNotFoundException;
 import org.apache.log4j.Logger;
-import symulation.ai.Siri;
-import symulation.data.Car;
-import symulation.data.SiriInputData;
-import symulation.exceptions.OutOfFuelException;
-import symulation.data.PetrolStation;
-import symulation.data.Road;
+import simulation.ai.Siri;
+import simulation.data.Car;
+import simulation.data.SiriInputData;
+import simulation.exceptions.OutOfFuelException;
+import simulation.data.PetrolStation;
+import simulation.data.Road;
 
 import java.util.ArrayList;
 

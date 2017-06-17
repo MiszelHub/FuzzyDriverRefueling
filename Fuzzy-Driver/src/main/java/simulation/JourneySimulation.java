@@ -1,11 +1,9 @@
-package symulation;
+package simulation;
 
 import FuzzyLogic.LinguisticVariableNotFoundException;
-import app.App;
 import org.apache.log4j.Logger;
-import symulation.exceptions.OutOfFuelException;
-import symulation.data.PetrolStation;
-import symulation.data.Road;
+import simulation.exceptions.OutOfFuelException;
+import simulation.data.Road;
 
 /**
  * Created by user on 03.06.2017.

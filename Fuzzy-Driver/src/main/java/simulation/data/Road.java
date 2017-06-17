@@ -1,6 +1,5 @@
-package symulation.data;
+package simulation.data;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 

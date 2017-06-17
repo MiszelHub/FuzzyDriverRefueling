@@ -1,7 +1,7 @@
-package symulation.generators;
+package simulation.generators;
 
-import symulation.data.PetrolStation;
-import symulation.data.Road;
+import simulation.data.PetrolStation;
+import simulation.data.Road;
 
 /**
  * Created by user on 03.06.2017.

@@ -1,4 +1,4 @@
-package symulation.exceptions;
+package simulation.exceptions;
 
 /**
  * Created by user on 04.06.2017.

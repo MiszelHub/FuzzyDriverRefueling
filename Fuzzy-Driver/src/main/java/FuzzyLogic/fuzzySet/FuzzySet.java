@@ -42,4 +42,12 @@ public class FuzzySet {
         result = 31 * result + membershipFunction.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "FuzzySet{" +
+                "fuzzySetName='" + fuzzySetName + '\'' +
+                ", membershipFunction=" + membershipFunction +
+                '}';
+    }
 }

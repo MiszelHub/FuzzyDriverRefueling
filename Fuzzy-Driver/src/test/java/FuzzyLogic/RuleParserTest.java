@@ -28,7 +28,7 @@ public class RuleParserTest {
                 .isNotNull();
         assertThat(ruleSet.getRules())
                 .isNotEmpty()
-                .hasSize(2);
+                .hasSize(12);
 
         System.out.println(ruleSet.toString());
 

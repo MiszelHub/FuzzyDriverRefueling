@@ -1,9 +1,9 @@
-package symulation;
+package simulation;
 
 import org.junit.Before;
 import org.junit.Test;
-import symulation.data.Road;
-import symulation.generators.PetrolStationGenerator;
+import simulation.data.Road;
+import simulation.generators.PetrolStationGenerator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

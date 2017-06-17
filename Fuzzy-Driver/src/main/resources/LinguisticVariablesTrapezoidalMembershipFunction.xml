@@ -1,0 +1,76 @@
+<LingusiticVariables>
+    <variable name="fuelPriceOnCurrentStation">
+        <FuzzySetBoundaries name="Low">
+            <a>3.2</a>
+            <b>3.5</b>
+            <c>3.6</c>
+            <d>3.7</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="High">
+            <a>3.6</a>
+            <b>3.8</b>
+            <c>4.0</c>
+            <d>4.1</d>
+        </FuzzySetBoundaries>
+    </variable>
+    <variable name="petrolStationsInRange">
+        <FuzzySetBoundaries name="Few">
+            <a>0</a>
+            <b>1</b>
+            <c>2</c>
+            <d>3</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="Several">
+            <a>2</a>
+            <b>4</b>
+            <c>5</c>
+            <d>7</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="A lot">
+            <a>6</a>
+            <b>8</b>
+            <c>10</c>
+            <d>12</d>
+        </FuzzySetBoundaries>
+    </variable>
+    <variable name="distanceToNextPetrolStation">
+        <FuzzySetBoundaries name="Low">
+            <a>0</a>
+            <b>50</b>
+            <c>80</c>
+            <d>100</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="Medium">
+            <a>90</a>
+            <b>120</b>
+            <c>140</c>
+            <d>160</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="High">
+            <a>150</a>
+            <b>180</b>
+            <c>200</c>
+            <d>210</d>
+        </FuzzySetBoundaries>
+    </variable>
+    <variable name="distanceToJourneyEnd">
+        <FuzzySetBoundaries name="Low">
+            <a>0</a>
+            <b>1</b>
+            <c>300</c>
+            <d>600</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="Medium">
+            <a>500</a>
+            <b>1000</b>
+            <c>1300</c>
+            <d>1500</d>
+        </FuzzySetBoundaries>
+        <FuzzySetBoundaries name="High">
+            <a>1400</a>
+            <b>1700</b>
+            <c>2000</c>
+            <d>2100</d>
+        </FuzzySetBoundaries>
+    </variable>
+</LingusiticVariables>
